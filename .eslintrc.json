@@ -1,0 +1,56 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "rules": {
+    "arrow-body-style": ["error", "as-needed"],
+    "arrow-spacing": "error",
+    "no-spaced-func": 2,
+    "space-in-parens": [2, "never"],
+    "prefer-destructuring": [
+      "error", {
+        "array": true,
+        "object": true
+      }, {
+        "enforceForRenamedProperties": false
+      }
+    ],
+    "object-curly-spacing": ["error", "always"],
+    "curly": [2, "multi", "consistent"],
+    "semi": [2, "never"],
+    "comma-dangle": [2, "never"],
+    "no-trailing-spaces": 2,
+    "comma-style": [2, "last"],
+    "space-infix-ops": 2,
+    "eol-last": 2,
+    "keyword-spacing": [
+      2,
+      {
+        "overrides": {
+          "if": {
+            "after": false
+          },
+          "while": {
+            "before": true
+          },
+          "catch": {
+            "before": true
+          }
+        }
+      }
+    ],
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "spaced-comment": [2, "always"],
+    "space-before-blocks": [2, "always"],
+    "key-spacing": [ 2, { "align": "colon" } ],
+    "array-bracket-spacing": [2, "always"],
+    "indent": [ 2, 2, { "SwitchCase": 1 } ],
+    "quotes": [ "error", "single", { "avoidEscape": true } ]
+  }
+}

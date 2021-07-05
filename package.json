@@ -1,0 +1,31 @@
+{
+  "name": "bingo-kata",
+  "version": "1.0.0",
+  "description": "Bingo Kata",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "dev": "nodemon --exec babel-node ./src/index.js",
+    "build": "babel ./src -d dist",
+    "test": "jest",
+    "lint": "eslint . --fix"
+  },
+  "keywords": [
+    "Bingo"
+  ],
+  "author": "GroverTB <grover.jtb@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/register": "^7.14.5",
+    "express": "4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/node": "^7.14.7",
+    "@babel/preset-env": "^7.14.7",
+    "eslint": "^7.30.0",
+    "jest": "27.0.6",
+    "nodemon": "2.0.9"
+  }
+}
